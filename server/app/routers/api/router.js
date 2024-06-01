@@ -12,9 +12,11 @@ router.get('/say', sayWelcome);
 
 const itemsRouter = require("./items/router");
 const programRouter = require("./programs/router");
+const categoriesRouter = require('./categories/router')
 
 router.use("/items", itemsRouter);
 router.use("/programs", programRouter);
+router.use("/categories", categoriesRouter);
 
 /* ************************************************************************* */
 
